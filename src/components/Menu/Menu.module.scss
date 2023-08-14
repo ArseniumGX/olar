@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.navegacao {
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (max-width: 744px) {
+  .navegacao {
+    height: 72px;
+  }
+}
