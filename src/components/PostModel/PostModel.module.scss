@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.postModelContainer {
+  color: $color-font;
+  position: relative;
+
+  &__fotoCapa,
+  &__titulo {
+    height: 204px;
+  }
+
+  &__fotoCapa {
+    width: 100%;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__titulo {
+    font-family: $font-paragraphs;
+    padding: 0 7.5rem;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__postConteudoContainer {
+    padding: 2.5rem 7.5rem 4.5rem;
+  }
+}
+
+@media (max-width: 744px) {
+  .postModelContainer {
+    &__postConteudoContainer {
+      padding: 2rem 1.5rem 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .postModelContainer {
+    &__fotoCapa,
+    &__titulo {
+      height: 104px;
+    }
+
+    &__titulo {
+      padding: 0 1rem;
+      font-size: 2rem;
+    }
+
+    &__postConteudoContainer {
+      padding: 2rem 1rem 1.5rem;
+    }
+  }
+}

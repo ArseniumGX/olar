@@ -1,6 +1,6 @@
 import "styles/globals.scss";
 import { BrowserRouter } from "react-router-dom";
-import { Menu } from "components";
+import { Menu, Footer } from "components";
 import { AppRoutes } from "AppRoutes";
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Menu />
       <AppRoutes />
+      <Footer />
     </BrowserRouter>
   );
 }

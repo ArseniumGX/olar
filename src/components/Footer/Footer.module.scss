@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.footer {
+  background-color: $color-tone-a;
+  color: $color-tone-b;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 16px;
+  font-family: $font-paragraphs;
+  font-weight: 400;
+}
