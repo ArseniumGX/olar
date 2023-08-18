@@ -1,10 +1,6 @@
-import { useEffect } from "react";
 import styles from "./PostModel.module.scss";
 
 export function PostModel({ fotoCapa, titulo, children }) {
-  useEffect(() => {
-    console.info(fotoCapa);
-  }, []);
   return (
     <article className={styles.postModelContainer}>
       <div
