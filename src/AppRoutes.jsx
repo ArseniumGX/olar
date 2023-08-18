@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, AboutMe } from "pages";
+import { Home, AboutMe, Post, NotFound } from "pages";
 import { DefaultPage } from "components";
 
 export function AppRoutes() {
@@ -9,7 +9,8 @@ export function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="sobre-mim" element={<AboutMe />} />
       </Route>
-      <Route path="*" element={<h1>Not found...</h1>} />
+      <Route path="posts/:id/*" element={<Post />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
